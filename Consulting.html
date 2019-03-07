@@ -1,55 +1,203 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>Consulting</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style> 
-            h1 {
-                text-align: center;
-                color: red;
-                font-weight: bold;
-                font-family: Times, serif;
-                background-color: blue;
-                    }
-        
-                    p{
-                        text-align: center;
-                        font-family: Times, serif;
-                        font-weight: bold;
-                    } 
-                      hr { 
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 5px;
-} 
-li{
-    align-items: center;
+<html lang="en">
+<head>
+<title>Consulting Services</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
 }
-        </style>
-    </head>
-    <body>
-       <button onclick=window.location.href="Index.html">Home</button>
-         <button onclick=window.location.href="cv.html">Curriculum Vitae</button>
-         <button onclick=window.location.href="Sports.html">Sports</button>
-         <button onclick=window.location.href="Consulting.html">Consulting</button>
-        
-    </body>
-    <h1> Consulting</h1>
-    <p> I run a consulting service in which I offer advice on<br>
-    
-        <ol>Blockchain</ol> 
-        <ol>Autonomous Things(Robots)</ol>
-        <ol>Immersive Experience</ol>
-           
+
+body {
+  margin: 0;
+  background-image:url('img/Logo.png');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: 500px 400px;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  
+  
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+/* Style the topnav links */
+.bottomnav a {
+  float: left;
+  display: block;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  padding: 14px 16px;
+  position: fixed;
+  bottom: 0;
+ width: 20%;
+    height: 10%;
+    background-color: #333; 
+}
+
+/* Change color on hover */
+.bottomnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  
+ 
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="background-color: rgb(266,132,19); font-family: Times, serif; color: blue">Consulting Services</h1>
+ 
+</div>
+
+<div class="topnav">
+  <a href="Index.php">Home</a>
+  <a href="Cv.html">Curriculum Vitae</a>
+  <a href="Interests.html">Interests</a>
+</div>
    
+<div class="row">
+  <div class="column">
+    <h2>Deloitte</h2>
+    <p> Deloitte is a multinational professional services network.
+        Deloitte is one of the "Big Four" accounting organizations and the largest 
+        professional services network in the world by revenue and number of professionals.
+
+Deloitte provides audit, tax, consulting, enterprise risk and financial advisory
+services with more than 286,200 professionals globally. In FY 2018, the network 
+earned a record $43.2 billion USD in aggregate revenues. As of 2017, 
+Deloitte is the 4th largest privately owned company in the United States.
+        <br><br>
+Imagine two entities (e.g. banks) that need to update their own user account balances when there is a request to 
+transfer money from one customer to another. They need to spend a tremendous (and costly) amount of 
+time and effort for coordination, synchronization, messaging and checking to ensure that each transaction 
+happens exactly as it should. Typically, the money being transferred is held by the originator until it 
+can be confirmed that it was received by the recipient. With the blockchain, a single ledger of transaction 
+entries that both parties have access to can simplify the coordination and validation efforts because there 
+is always a single version of records, not two disparate databases.
+
+  </div>
+  
+  <div class="column">
+    <h2>PwC</h2>
+    <p>PricewaterhouseCoopers (doing business as PwC) is a multinational professional services network headquartered in London, United Kingdom. 
+        PwC ranks as the second largest professional services firm in the world behind Deloitte, and is one of the Big Four auditors, 
+        along with Deloitte, EY and KPMG.
+        <br><br>
+PwC is a network of firms in 158 countries, 721 locations, with 250,930 people. 
+As of 2015, 22% of the workforce worked in Asia, 26% in North America and the Caribbean and 32% in Western Europe.
+The company's global revenues were $37.7 billion in FY 2017, of which $16 billion was generated by its Assurance practice, 
+$9.46 billion by its Tax practice and $12.25 billion by its Advisory practice. PwC provides services to 420 out of 500 Fortune 500 companies.
+<br><br>
+The firm was formed in 1998 by a merger between Coopers & Lybrand and Price Waterhouse.
+Both firms had histories dating back to the 19th century. The trading name was shortened to PwC in September 2010 as part of a rebranding effort.
+<br><br>
+As of 2017, PwC is the 5th-largest privately owned company in the United States.
+
+  </div>
+  
+  <div class="column">
+    <h2>Ey (Ernst & Young)</h2>
+    <p>Ernst & Young (doing business as EY) is a multinational professional services firm headquartered in London, England, United Kingdom. 
+        EY is one of the largest professional services firms in the world and is one of the "Big Four" accounting firms.
+        <br><br>
+EY operates as a network of member firms which are separate legal entities in individual countries. 
+It has 270,000 employees in over 700 offices around 150 countries in the world. It provides assurance (including financial audit), tax, 
+consulting and advisory services to companies.
+<br><br>
+
+The firm dates back to 1849 with the founding of Harding & Pullein in England. 
+The current firm was formed by a merger of Ernst & Whinney and Arthur Young & Co. in 1989.
+It was known as Ernst & Young until 2013 when it underwent a rebranding to EY. 
+The acronym "EY" was already an informal name for the firm prior to its official adoption.
+<br><br>
+
+In 2018, Fortune magazine ranked EY 52nd on the 100 Best Companies to Work For list.
+In 2017, EY was the 9th largest privately owned organization in the United States.
+  </div>
+
+    
+    <div class="column">
+        <h2>KMPG</h2>
+        <p>
+            KPMG is a professional service company and one of the Big Four auditors, along with Deloitte, Ernst & Young (EY), 
+            and PricewaterhouseCoopers (PwC).
+            <br><br>
+    Seated in Amstelveen, the Netherlands, KPMG employs 207,050 people and has three lines of services: financial audit, tax, and advisory. 
+    Its tax and advisory services are further divided into various service groups.
+        <br><br>
+        The name "KPMG" stands for "Klynveld Peat Marwick Goerdeler." 
+        It was chosen when KMG (Klynveld Main Goerdeler) merged with Peat Marwick in 1987.
+        </p>
+    </div>
+</div>
+    <button style=" background-color: #Bf211E;
+  border: none;
+  color: #070707;
+  margin-left: 550px;
+  padding: 20px 44px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Times, serif;
+  font-weight: Bold;
+  align-self: center" 
+  onclick=window.location.href="Consultingpage.html" class="btn">Consulting</button>
+    
+</body>
 </html>
