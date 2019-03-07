@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Consulting Services</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  
+  
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+/* Style the topnav links */
+.bottomnav a {
+  float: left;
+  display: block;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  padding: 14px 16px;
+  position: fixed;
+  bottom: 0;
+ width: 20%;
+    height: 10%;
+    background-color: #333; 
+}
+
+/* Change color on hover */
+.bottomnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+  
+ 
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="background-color: rgb(266,132,19); font-family: Times, serif; color: blue">Consulting Services</h1>
+ 
+</div>
+
+<div class="topnav">
+  <a href="Index.php">Home</a>
+  <a href="Cv.html">Curriculum Vitae</a>
+  <a href="Interests.html">Interests</a>
+</div>
+   
+<div class="row">
+  <div class="column">
+    <h2>Blockchain</h2>
+    <p>Blockchain is the technology the underpins digital currency (Bitcoin, Litecoin, Ethereum, and the like). 
+        The tech allows digital information to be distributed, but not copied. That means each individual piece of 
+        data can only have one owner.
+        <br><br>
+Imagine two entities (e.g. banks) that need to update their own user account balances when there is a request to 
+transfer money from one customer to another. They need to spend a tremendous (and costly) amount of 
+time and effort for coordination, synchronization, messaging and checking to ensure that each transaction 
+happens exactly as it should. Typically, the money being transferred is held by the originator until it 
+can be confirmed that it was received by the recipient. With the blockchain, a single ledger of transaction 
+entries that both parties have access to can simplify the coordination and validation efforts because there 
+is always a single version of records, not two disparate databases.
+
+  </div>
+  
+  <div class="column">
+    <h2>Autonomous Things</h2>
+    <p>Autonomous things, such as robots, drones and autonomous vehicles, go beyond the automation provided by
+        rigid programming models and exploit AI to deliver advanced behaviours that interact more naturally 
+        with their surroundings and with people 
+        <br><br>
+Autonomous vehicles are constantly collecting data from their environment; such as the road conditions, 
+potential hazards, pedestrians, surrounding vehicles and even storing the routes and roads themselves. 
+In order for these vehicles to become safer they rely on a vast amounts of software and the collection of vast 
+amounts of data to train the artificial intelligence to ensure the safety of their passengers without humans 
+having to intervene. I have read a stat that says these vehicles exchange around 15,000 pieces of data within a 
+tenth of a second, this is a figure that could rise to 200,000 pieces of data by 2020.
+
+  </div>
+  
+  <div class="column">
+    <h2>Immersive Experiences</h2>
+    <p>Immersive experiences are constructed environments that use sensory stimulation to ‘feel real’. 
+        Immersive experiences aren’t always digital, but immersive technologies are great experiential amplifiers.
+        Like science fiction come to life, Virtual Reality (VR) accesses digital worlds you ‘step’ into, Augmented Reality
+        (AR) creates digital layers over the top of the real world, and Mixed Reality (MR) is a combination of the two.
+        <br> <br>
+Video Games make great use of Immersive experiences, especially Virtual Reality, with many options for “headsets” as 
+the Oculus Rift, the Oculus Go, the HTC Vive and many more to be used to play games on computers or Consoles such as 
+PlayStation (PSVR). Video Games also make use of Augmented Reality on mobile games, such as the phenomenon that is 
+Pokémon Go. Augmented reality is also used outside of the video game world, as Snapchat use it for their filters, 
+but IKEA had the ingenious idea to allow customers to see if the product would fit in the area they wanted, and 
+whether or not they thought the product suited the area.
+
+  </div>
+</div>
+    <div class="bottomnav">
+        <a href="Ebus1.php">Calculator</a>
+    </div>
+</body>
+</html>
