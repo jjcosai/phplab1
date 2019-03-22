@@ -49,15 +49,15 @@ $_SESSION['txtTotal'] = $totalValue;
                 </tr>
                 <tr>
                     <td style="background-color: #Bf211E;">BlockChain</td>
-                    <td><input type="radio" id="CocaCola" name="rdoGroup" value="1000" /></td>
+                    <td><input type="radio" id="BlockChain" name="rdoGroup" value="1000" /></td>
                 </tr>
                 <tr>
                     <td style="background-color: #Bf211E;">Autonomous Things</td>
-                    <td><input type="radio" id="Sprite" name="rdoGroup" value="2000" /></td>
+                    <td><input type="radio" id="AutonomousThings" name="rdoGroup" value="2000" /></td>
                 </tr>
                 <tr>
                     <td style="background-color: #Bf211E;">Immersive Experience</td>
-                    <td><input type="radio" id="Fanta" name="rdoGroup" value="3000" /></td>
+                    <td><input type="radio" id="ImmersiveExperience" name="rdoGroup" value="3000" /></td>
                 </tr>
             </table>
         </center>
@@ -100,33 +100,33 @@ $_SESSION['txtTotal'] = $totalValue;
                 function calcSub(){
                     //Assigning variables to the values
                     var subAmount = parseFloat(document.getElementById('txtSubTot').value);
-                    var CocaCola = parseFloat(document.getElementById('CocaCola').value);
-                    var Sprite = parseFloat(document.getElementById('Sprite').value);
-                    var Fanta = parseFloat(document.getElementById('Fanta').value);
+                    var BlockChain = parseFloat(document.getElementById('BlockChain').value);
+                    var AutonomousThings = parseFloat(document.getElementById('AutonomousThings').value);
+                    var ImmersiveExperience = parseFloat(document.getElementById('ImmersiveExperience').value);
                     
                     // if radio buttons are clicked, values are assigned
-                    if (document.getElementById('CocaCola').checked) {
-                        document.intCalc.txtSubTot.value = CocaCola;
-                        subAmount = CocaCola;
-                        calculation(subAmount);
+                    if (document.getElementById('BlockChain').checked) {
+                        document.intCalc.txtSubTot.value = BlockChain;
+                        subAmount = BlockChain;
+                        calcDisVatTotal(subAmount);
                         
                     }
-                   else if (document.getElementById('Sprite').checked) {
-                        document.intCalc.txtSubTot.value = Sprite;
-                        subAmount = Sprite;
-                        calculation(subAmount);
+                   else if (document.getElementById('AutonomousThings').checked) {
+                        document.intCalc.txtSubTot.value = AutonomousThings;
+                        subAmount = AutonomousThings;
+                        calcDisVatTotal(subAmount);
                         
                     }
-                    else if (document.getElementById('Fanta').checked) {
-                        document.intCalc.txtSubTot.value = Fanta;
-                        subAmount = Fanta;
-                        calculation(subAmount);
+                    else if (document.getElementById('ImmersiveExperience').checked) {
+                        document.intCalc.txtSubTot.value = ImmersiveExperience;
+                        subAmount = ImmersiveExperience;
+                        calcDisVatTotal(subAmount);
                     }
                 } 
                 
                 //function for calculationg the values//
-                function calculation(parmsTotal) {
-                    var subTotal = parseFloat(parmsTotal);
+                function calcDisVatTotal(parmSubTotal) {
+                    var subTotal = parseFloat(parmSubTotal);
                     var discCalc = parseFloat(subTotal * .10);
                     var vatCalc= parseFloat(subTotal * .20);    
                     var total = parseFloat(subTotal - discCalc + vatCalc);
